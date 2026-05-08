@@ -5,7 +5,7 @@ using System.Web;
 
 namespace IntroCsharp.Models
 {
-    internal class Practca1
+    internal class Practica1
     {
         static void Main(string[] args)
         {
@@ -17,7 +17,7 @@ namespace IntroCsharp.Models
             cal1 = Convert.ToInt32(dato1);
             Console.WriteLine("Ingresa segunda calificacion:");
             dato1 = Console.ReadLine();
-            cal2 = Convert.ToInt32();
+            cal2 = Convert.ToInt32(dato1);
             int suma = cal1 + cal2;
 
             Console.WriteLine("La suma de las calificaciones es:" + suma);

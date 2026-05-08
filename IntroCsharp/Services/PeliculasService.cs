@@ -20,12 +20,11 @@ namespace IntroCsharp.Services
             };
 
             var pelicula2 = new Pelicula()
-                
                  {
                      Titulo = "Spiderman",
                      Duracion = 111,
                      Pais = "USA",
-                     Publicacion = new DateTime(2015, 05, 5)
+                     Publicacion = new DateTime(2015, 05, 11)
 
                  };
             return new List<Pelicula> { pelicula1, pelicula2 };

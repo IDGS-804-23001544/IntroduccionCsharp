@@ -1,0 +1,49 @@
+﻿@model IntroCsharp.Models.MultSumas
+
+@{
+    ViewBag.Title = "MultSumas";
+}
+
+<h2>Multiplicación usando sumas</h2>
+
+<div class="row">
+
+    <div class="col-lg-6">
+
+        <form action="/" method="post">
+
+            <label for="A">Valor de A:</label>
+            <input type="text" name="A" value="" />
+            <br />
+
+            <label for="B">Valor de B:</label>
+            <input type="text" name="B" value="" />
+            <br /><br />
+
+            <input type="submit" value="Calcular" />
+
+        </form>
+
+    </div>
+
+    <div class="col-lg-6">
+
+        <br />
+
+        <h1>
+            Procedimiento:
+        </h1>
+
+        <h2>
+            @Model.Procedimiento
+        </h2>
+
+        <h1>
+            Resultado:
+            @Model.Res
+        </h1>
+
+    </div>
+
+</div>
+

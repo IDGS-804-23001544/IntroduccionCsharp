@@ -1,8 +1,11 @@
-﻿using System;
+﻿using IntroCsharp.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using IntroCsharp.Services;
+using IntroCsharp.Models;
 
 namespace IntroCsharp.Controllers
 {
@@ -31,6 +34,24 @@ namespace IntroCsharp.Controllers
 
             return View();
         }
+
+
+        public ActionResult MuestraPeliculas()
+        {
+            var peliculasService = new PeliculasService();
+            var model = peliculasService.ObtenerPelicula();
+
+            return View(model);
+
+        }
+
+        public ActionResult Calculos(OperasBas op)
+        {
+            op.Suma();
+            return View(op);
+        }
+
+
     }
 }
 

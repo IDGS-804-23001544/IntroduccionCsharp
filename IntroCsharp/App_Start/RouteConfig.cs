@@ -16,7 +16,7 @@ namespace IntroCsharp
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Prueba", action = "Suma", id = UrlParameter.Optional }
+                defaults: new { controller = "Multiplicacion", action = "MultSumas", id = UrlParameter.Optional }
             );
         }
     }
